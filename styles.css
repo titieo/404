@@ -5,8 +5,6 @@ html {
 body {
   font-family: "Space Mono", "Courier New", Courier, monospace;
   font-size: 2.4rem;
-
-  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -19,29 +17,22 @@ body {
   font-family: Inconsolata, "Courier New", Courier, monospace;
   text-transform: uppercase;
   /* margin: 2rem 2.4rem; */
-  position: absolute;
-  top: 2rem;
-  left: 2.4rem;
+  margin-top: 2rem;
+  margin-left: 2.4rem;
+  margin: 2rem 0 2rem 2.4rem;
 }
 .content {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  align-content: center; */
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* justify-items: center; */
   align-items: center;
-  /* align-content: center; */
+  margin: 2rem auto;
 }
 .content__image {
-  width: 28rem;
-  height: 23rem;
+  max-width: 28rem;
+  max-height: 23rem;
 }
 .content__body {
   margin-left: 1rem;
@@ -77,11 +68,14 @@ body {
     justify-content: center;
     /* justify-items: center; */
     align-items: center;
+
     /* align-content: center; */
   }
   .content__image {
     width: 50rem;
     height: auto;
+    max-width: 100vw;
+    max-height: 100vh;
   }
   .content__body {
     margin-left: 1rem;
